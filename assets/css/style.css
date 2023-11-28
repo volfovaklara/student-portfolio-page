@@ -1,0 +1,161 @@
+:root {
+    --background-colour: #fef6e4;
+    --text-colour: #172c66; 
+    --heading-colour: #f582ae;
+    --tertiary-colour: #8bd3dd;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    background-color: var(--background-colour);
+    color: var(--text-colour);
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 35px;
+}
+
+header {
+    padding: 20px;
+}
+
+header h1 {
+    display: inline-block;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    margin-right: 25px;
+    float: right;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+footer {
+    margin: 15px;
+    text-align: center;
+    padding: 35px;
+}
+
+footer h3 {
+    font-size: 25px;
+}
+
+a {
+    color: var(--text-colour);
+    text-decoration: none;
+}
+
+p {
+    display: block;
+    text-align: center;
+}
+
+img {
+    border-radius: 8px;
+    flex: 1;
+}
+
+.hero-banner {
+    height: 800px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url(/assets/images/profile-photo.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+
+
+.subheading {
+    text-align: center;
+    border-bottom: 2px solid var(--text-colour);
+    width: 300px;
+    margin: 50px auto;
+}
+
+#about-text {
+    display: inline-block;
+    text-align: left;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15px;
+    margin: 25px;
+    justify-content: center;
+}
+
+.contact-section ul {
+    list-style-type: none;
+}
+
+.contact-section ul li {
+    display: inline;
+    margin: 25px;
+}
+
+@media screen and (min-width: 768px) {
+    .row {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .row:last-child {
+        flex-grow: 1;
+    }
+}
+
+@media screen and (min-width:992px) {
+    header {
+        width: 75%;
+    }
+
+    .row {
+        flex: 0 0 33.333%;
+        max-width: 33.333%;
+    }
+}
