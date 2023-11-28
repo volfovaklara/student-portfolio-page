@@ -74,7 +74,7 @@ img {
     height: 800px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url(./assets/images/profile-photo.jpg);
+    background-image: url(/assets/images/profile-photo.jpg);
     background-size: cover;
     background-position: center;
 }
